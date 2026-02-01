@@ -1,4 +1,4 @@
-### 48-Hour Decision Pipeline Pre-Flight
+# 48-Hour Decision Pipeline Pre-Flight
 (Repro + Safety + Proof Pack Spec)
 $2,500 fixed • Delivered in 48 hours (from receipt of complete inputs)
 
