@@ -8,6 +8,13 @@ This repository contains a single, opinionated pre-flight diagnostic designed to
 
 ---
 
+## Start here
+
+**48-Hour Decision Pipeline Pre-Flight**  
+→ **[`docs/ci-preflight.md`](docs/ci-preflight.md)**
+
+---
+
 ## What this is
 
 Coherence Gate is a forensic, asynchronous pre-flight for decision pipelines.
@@ -17,23 +24,18 @@ It evaluates whether a system:
 - Blocks unsafe or ambiguous execution modes by default
 - Can defend its outputs weeks later under scrutiny
 
-This is **not** a platform, framework, or agent runtime.
+This is **not** a platform, framework, or agent runtime.  
 It is a bounded diagnostic artifact.
 
 ---
 
-## The Artifact
+## What you get (deliverables)
 
-**48-Hour Decision Pipeline Pre-Flight**  
-→ [`docs/ci-preflight.md`](docs/ci-preflight.md)
+- **Ranked Risk Register** (top 5–10 issues with evidence, blast radius, smallest fix, acceptance test)
+- **Proof Pack v1 Spec** (the artifact contract your pipeline must emit per run)
+- **Go / No-Go** + shortest path to become “Sprint-Ready”
 
-The document defines:
-- Scope and outcomes
-- Required inputs
-- Deliverables and exclusions
-- The exact evidence produced
-
-If the artifact doesn’t stand on its own, the engagement doesn’t work.
+(Full scope and exclusions are in the artifact.)
 
 ---
 
@@ -51,7 +53,7 @@ If the artifact doesn’t stand on its own, the engagement doesn’t work.
 
 ---
 
-## Engagement Model
+## Engagement model
 
 - Async-only
 - Fixed scope, fixed price
@@ -62,6 +64,10 @@ If the artifact doesn’t stand on its own, the engagement doesn’t work.
 
 ## Next step
 
-If the artifact describes a problem you recognize, read it fully.
+If the artifact describes a problem you recognize, read it fully:
+
+→ **[`docs/ci-preflight.md`](docs/ci-preflight.md)**
+
+If you want to run the pre-flight, contact me here: **[add your preferred async contact method]**.
 
 If not, this repo is not for you — and that’s intentional.
