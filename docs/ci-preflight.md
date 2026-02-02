@@ -64,6 +64,19 @@ Communication happens via messages (and/or a shared doc). You’ll get:
 Fill the intake (10 minutes): https://github.com/SirBrenton/coherence-gate/blob/main/docs/intake.md  
 Once inputs are complete, the 48-hour clock starts.
 
+## Example output (what you receive)
+One item from the **Ranked Risk Register** looks like:
+- **RR-03 — Unsafe mode can run in CI**
+- **Evidence:** `.github/workflows/pipeline.yml:L88` + CI log excerpt (linked)
+- **Blast radius:** wrong mode → wrong result shipped → review/audit failure
+- **Smallest fix:** default-safe mode + explicit allowlist
+- **Acceptance test:** CI fails if `MODE=unsafe` without an override token
+
+## Confidentiality / handling
+- Read-only access or a zip snapshot is sufficient.
+- You can redact sensitive values; this evaluates **proof gaps**, not business logic.
+- I retain only the delivered artifacts unless you request otherwise.
+
 ## Inputs required
 - Repo snapshot (read-only access or zip is fine)
 - CI evidence: logs for 2–3 runs (1 pass + 1 fail if possible)
