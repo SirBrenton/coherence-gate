@@ -4,14 +4,16 @@ Artifact-led pipeline reliability diagnostics for teams whose CI, analytics, or 
 
 This repository contains a single, opinionated pre-flight diagnostic designed to answer one question:
 
-> **Can your pipeline prove what happened after a run — or are you relying on trust, memory, and dashboards?**
+> **Can your pipeline prove what happened after a run — or are you relying on trust and dashboards?**
 
 ---
 
 ## Start here
 
-**48-Hour Decision Pipeline Pre-Flight**  
-→ **[`docs/ci-preflight.md`](docs/ci-preflight.md)**
+- Read the offer: **[`docs/ci-preflight.md`](docs/ci-preflight.md)**
+- Start intake (10 min): **[`docs/intake.md`](docs/intake.md)**
+- Async-only. 48 hours starts after inputs are complete.
+- If repo/logs can’t be shared → Evidence Gap Pack.
 
 ---
 
@@ -64,10 +66,10 @@ It is a bounded diagnostic artifact.
 
 ## Next step
 
-If the artifact describes a problem you recognize, read it fully:
-
+Read the offer:
 → **[`docs/ci-preflight.md`](docs/ci-preflight.md)**
 
-If you want to run the pre-flight, contact me here: **[add your preferred async contact method]**.
+Start the intake (10 minutes):
+→ **[`docs/intake.md`](docs/intake.md)**
 
-If not, this repo is not for you — and that’s intentional.
+If you can’t share repo/log evidence, the intake routes to the **Evidence Gap Pack**.
