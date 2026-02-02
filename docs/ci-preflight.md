@@ -60,6 +60,10 @@ Communication happens via messages (and/or a shared doc). You’ll get:
 - one clarification round (I send questions; you reply in one batch)
 - final delivery **48 hours after inputs are complete**
 
+## How to start (async)
+Fill the intake (10 minutes): https://github.com/SirBrenton/coherence-gate/blob/main/docs/intake.md  
+Once inputs are complete, the 48-hour clock starts.
+
 ## Inputs required
 - Repo snapshot (read-only access or zip is fine)
 - CI evidence: logs for 2–3 runs (1 pass + 1 fail if possible)
