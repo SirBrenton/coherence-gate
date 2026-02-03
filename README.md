@@ -10,7 +10,6 @@ This repository contains a single, opinionated pre-flight diagnostic designed to
 - **$2,500 fixed • async-only • delivered in 48 hours** after inputs are complete
 - Deliverables: **Ranked Risk Register**, **Proof Pack v1 Spec**, **Go / No-Go**
 - If repo/logs can’t be shared → **Evidence Gap Pack**
-- Start here: **read the offer** → **fill the intake**
 
 ---
 
