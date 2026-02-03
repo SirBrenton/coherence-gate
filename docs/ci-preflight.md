@@ -1,18 +1,16 @@
-# 48-Hour Decision Pipeline Pre-Flight
+# 48-Hour Decision Pipeline Pre-Flight  
 *Reproducibility • Safety Gates • Proof Pack Spec*  
-**$2,500 fixed** • Delivered in **48 hours** (from receipt of complete inputs)
+
+**$2,500 fixed** • Delivered in **48 hours** (after complete inputs)
 
 ## Contents
-- [Who this is for](#who-this-is-for)
-- [Outcome](#outcome)
-- [Deliverables](#deliverables)
-  - [Ranked Risk Register](#1-ranked-risk-register-top-510)
-  - [Proof Pack v1 Spec](#2-proof-pack-v1-spec-artifact-contract--ci-acceptance-tests)
-  - [Go/No-Go](#3-gono-go--shortest-path-to-sprint-ready)
-- [Async-only (no calls)](#async-only-no-calls)
-- [Inputs required](#inputs-required)
-- [If inputs are limited](#if-inputs-are-limited-evidence-gap-pack)
-- [Not included](#not-included)
+- Who this is for  
+- Outcome  
+- Deliverables  
+- Async-only (no calls)  
+- Inputs required  
+- Evidence Gap Pack  
+- Not included  
 
 ## Who this is for
 Teams whose pipeline outputs drive decisions (experiments, ML evals, analytics, pricing, risk) and are tired of:
@@ -22,18 +20,21 @@ Teams whose pipeline outputs drive decisions (experiments, ML evals, analytics, 
 - weeks later: “we can’t reproduce what ran, with what inputs/policy”
 
 ## Outcome
+
 In 48 hours you’ll be able to answer — **with evidence**:
+
 - Where nondeterminism or untracked configuration can enter  
 - What can run “by accident” (unsafe modes, missing gates, silent defaults)  
 - What each run must emit so results are explainable, reproducible, and reviewable  
 
-**This does not require me to understand your whole system — only your single declared critical path and the evidence your CI already produces for it.**
+This evaluates **only one declared critical path** and the evidence your CI already produces for it.
 
 **This is not** a platform redesign or a code review.  
-It’s a forensic evaluation of what your pipeline can and cannot prove after a run — plus a spec to close the highest-risk proof gaps.  
-It does not require new business logic or domain knowledge: it evaluates whether the existing system emits enough evidence to defend its decisions.
+It is a forensic evaluation of what your pipeline can — and cannot — *prove* after a run, plus a spec to close the highest-risk proof gaps.
 
 ## Deliverables
+
+You will receive three concrete artifacts:
 
 ### 1) Ranked Risk Register (top 5–10)
 Each item includes:
@@ -55,20 +56,27 @@ A portable spec for what every run should produce — and what CI must enforce �
 - **No:** minimum readiness steps to make it feasible  
 
 ## Async-only (no calls)
-This engagement is asynchronous-only and does not include calls. If your process requires meetings, it’s not a fit.
+
+This engagement is fully asynchronous. If your process requires meetings, it’s not a fit.
 
 Communication happens via messages (and/or a shared doc). You’ll get:
 - a short intake questionnaire (you answer once)
 - one clarification round (I send questions; you reply in one batch)
-- final delivery **The 48-hour clock starts after inputs are complete**
+- Final delivery  
+- **48-hour clock begins only after inputs are complete**
 
 ## How to start (async)
-Fill the intake (10 minutes): https://github.com/SirBrenton/coherence-gate/blob/main/docs/intake.md  
-Once inputs are complete, the 48-hour clock starts.
+
+1) Complete the intake (≈ 10 minutes):  
+👉 https://github.com/SirBrenton/coherence-gate/blob/main/docs/intake.md  
+
+2) Send repo access + CI logs in one message.  
+
+3) When I reply **“Inputs complete,”** the 48-hour clock begins.
 
 ## Example output (what you receive)
 
-Below is a representative excerpt — the real delivery includes 5–10 items like this, plus the Proof Pack v1 Spec and a Go/No-Go summary.
+Below is a representative excerpt. The real delivery includes 5–10 items like this, plus the full Proof Pack v1 Spec and a Go/No-Go summary.
 
 ### Risk Register item (example)
 **RR-03 — Unsafe mode can run in CI**
@@ -87,23 +95,27 @@ Below is a representative excerpt — the real delivery includes 5–10 items li
 - **`decision_table.csv`:** diffable review surface (what changed, what ran, why it passed/failed)
 
 ## Confidentiality / handling
-- Read-only access or a zip snapshot is sufficient.
-- You can redact sensitive values; this evaluates **proof gaps**, not business logic.
+
+- Read-only access or a zip snapshot is sufficient.  
+- You may redact sensitive values — this evaluates **proof gaps**, not business logic.  
 - I retain only the delivered artifacts unless you request otherwise.
 
 ## Inputs required
+
 - Repo snapshot (read-only access or zip is fine)
 - CI evidence: logs for 2–3 runs (1 pass + 1 fail if possible)
 - One critical path to evaluate (one entrypoint/job)
 - Completed intake questionnaire (~10 minutes)
 
 ## If inputs are limited (Evidence Gap Pack)
-If you can’t provide repo + CI evidence, this converts to an **Evidence Gap Pack** (48 hours):
+
+If you cannot provide repo access **or** CI evidence, this converts to an **Evidence Gap Pack** (48 hours):
 - what evidence is missing (and why it blocks reliability claims)
 - Proof Pack v1 Spec + CI snippet examples
 - readiness checklist for a successful hardening sprint
 
 ## Not included
+
 - implementing changes in your repo
 - making everything deterministic
 - production rollout / org-wide instrumentation
