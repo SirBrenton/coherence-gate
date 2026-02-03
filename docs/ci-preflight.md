@@ -27,6 +27,8 @@ In 48 hours you’ll be able to answer — **with evidence**:
 - What can run “by accident” (unsafe modes, missing gates, silent defaults)  
 - What each run must emit so results are explainable, reproducible, and reviewable  
 
+**This does not require me to understand your whole system — only your single declared critical path and the evidence your CI already produces for it.**
+
 **This is not** a platform redesign or a code review.  
 It’s a forensic evaluation of what your pipeline can and cannot prove after a run — plus a spec to close the highest-risk proof gaps.  
 It does not require new business logic or domain knowledge: it evaluates whether the existing system emits enough evidence to defend its decisions.
@@ -65,12 +67,24 @@ Fill the intake (10 minutes): https://github.com/SirBrenton/coherence-gate/blob/
 Once inputs are complete, the 48-hour clock starts.
 
 ## Example output (what you receive)
-One item from the **Ranked Risk Register** looks like:
-- **RR-03 — Unsafe mode can run in CI**
+
+Below is a representative excerpt — the real delivery includes 5–10 items like this, plus the Proof Pack v1 Spec and a Go/No-Go summary.
+
+### Risk Register item (example)
+**RR-03 — Unsafe mode can run in CI**
+
 - **Evidence:** `.github/workflows/pipeline.yml:L88` + CI log excerpt (linked)
+- **Failure mode:** `MODE=unsafe` can execute without an explicit override
 - **Blast radius:** wrong mode → wrong result shipped → review/audit failure
-- **Smallest fix:** default-safe mode + explicit allowlist
-- **Acceptance test:** CI fails if `MODE=unsafe` without an override token
+- **Smallest fix:** default-safe mode + explicit allowlist / override token
+- **Acceptance test:** CI fails if `MODE=unsafe` without override token
+- **Notes:** identifies where to add the guard (workflow gate vs runtime check)
+
+### Proof Pack v1 Spec excerpt (example)
+- **`run_manifest.json`:** commit SHA, runner image, mode/env, entrypoint, start/end timestamps
+- **`input_fingerprint.json`:** hash + byte count for declared inputs (no data leakage)
+- **`verdict.json`:** PASS/FAIL with explicit reasons + links to evidence
+- **`decision_table.csv`:** diffable review surface (what changed, what ran, why it passed/failed)
 
 ## Confidentiality / handling
 - Read-only access or a zip snapshot is sufficient.

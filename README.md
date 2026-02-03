@@ -10,6 +10,7 @@ This repository contains a single, opinionated pre-flight diagnostic designed to
 - **$2,500 fixed • async-only • delivered in 48 hours** after inputs are complete
 - Deliverables: **Ranked Risk Register**, **Proof Pack v1 Spec**, **Go / No-Go**
 - If repo/logs can’t be shared → **Evidence Gap Pack**
+- I don’t need to understand your whole system — only **one declared critical path** + **CI evidence**.
 
 ---
 
@@ -17,6 +18,9 @@ This repository contains a single, opinionated pre-flight diagnostic designed to
 
 - Read the offer: **[`docs/ci-preflight.md`](docs/ci-preflight.md)**
 - Start intake (10 min): **[`docs/intake.md`](docs/intake.md)**
+
+If the intake is a “yes,” send the completed intake + repo access/zip + CI log links **in one message**.  
+I confirm completeness; then the 48-hour clock starts.
 
 ---
 
@@ -64,3 +68,6 @@ It is a bounded diagnostic artifact.
 - Fixed scope, fixed price
 - Artifact-first delivery
 - No calls, no retainers, no scope creep
+
+## Handling / confidentiality (lightweight)
+Read-only access or a zip snapshot is sufficient. You may redact sensitive values; this evaluates **proof gaps**, not business logic.
