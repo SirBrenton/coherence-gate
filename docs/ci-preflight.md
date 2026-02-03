@@ -58,7 +58,7 @@ This engagement is asynchronous-only and does not include calls. If your process
 Communication happens via messages (and/or a shared doc). You’ll get:
 - a short intake questionnaire (you answer once)
 - one clarification round (I send questions; you reply in one batch)
-- final delivery **48 hours after inputs are complete**
+- final delivery **The 48-hour clock starts after inputs are complete**
 
 ## How to start (async)
 Fill the intake (10 minutes): https://github.com/SirBrenton/coherence-gate/blob/main/docs/intake.md  

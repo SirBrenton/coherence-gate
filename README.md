@@ -6,14 +6,18 @@ This repository contains a single, opinionated pre-flight diagnostic designed to
 
 > **Can your pipeline prove what happened after a run — or are you relying on trust and dashboards?**
 
+## TL;DR
+- **$2,500 fixed • async-only • delivered in 48 hours** after inputs are complete
+- Deliverables: **Ranked Risk Register**, **Proof Pack v1 Spec**, **Go / No-Go**
+- If repo/logs can’t be shared → **Evidence Gap Pack**
+- Start here: **read the offer** → **fill the intake**
+
 ---
 
 ## Start here
 
 - Read the offer: **[`docs/ci-preflight.md`](docs/ci-preflight.md)**
 - Start intake (10 min): **[`docs/intake.md`](docs/intake.md)**
-- Async-only. 48 hours starts after inputs are complete.
-- If repo/logs can’t be shared → Evidence Gap Pack.
 
 ---
 
@@ -61,15 +65,3 @@ It is a bounded diagnostic artifact.
 - Fixed scope, fixed price
 - Artifact-first delivery
 - No calls, no retainers, no scope creep
-
----
-
-## Next step
-
-Read the offer:
-→ **[`docs/ci-preflight.md`](docs/ci-preflight.md)**
-
-Start the intake (10 minutes):
-→ **[`docs/intake.md`](docs/intake.md)**
-
-If you can’t share repo/log evidence, the intake routes to the **Evidence Gap Pack**.

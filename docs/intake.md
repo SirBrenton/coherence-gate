@@ -75,5 +75,5 @@ SECTION 6 — Known concerns (optional but structured)
 
 SECTION 7 — Readiness / clock start (required)
 [ ] All required inputs are complete.
-[ ] I understand the 48-hour window starts after you confirm completeness.
+[ ] I understand The 48-hour clock starts after you confirm completeness.
 [ ] I understand no fixes are implemented in this engagement.
