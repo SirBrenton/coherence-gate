@@ -10,9 +10,9 @@
 
 Send **one message** containing:
 
-- ✅ Completed answers (copy/paste block below)
+- ✅ Completed intake (copy/paste block below)
 - ✅ Repo access method (read-only access **OR** zip snapshot)
-- ✅ CI evidence for 2–3 runs (links or exports):
+- ✅ CI evidence for **2–3 runs** (links or exports):
   - 1 successful run
   - 1 failed/partial run (if available)
 
@@ -30,35 +30,29 @@ I reply with **“Inputs complete”** (clock starts) or **“Inputs incomplete 
 - Async-only (no calls)
 - The 48-hour clock starts **after** completeness is confirmed
 
----
-
-### **1) Ownership**
+```text
+1) OWNERSHIP
 Name:
 Role/Title:
 Company (if different than profile):
 Delivery email:
 Access level: repo/CI access / zip+logs / delegate (needs approval)
 
----
-
-### **2) Scope lock**
+2) SCOPE LOCK
 Pipeline type:
 Pipeline purpose (2 sentences):
-**ONE** critical path to evaluate (entrypoint/job name):
+ONE critical path to evaluate (entrypoint/job name):
 
----
-
-### **3) Evidence access**
+3) EVIDENCE ACCESS
 Repo access method (read-only or zip):
 CI system:
-Links/uploads — successful run:
-Links/uploads — failed/partial run (if available):
+Successful run (link + run ID):
+Failed/partial run (link + run ID, if available):
+How to access logs/artifacts (links/exports):
 
----
-
-### **4) Minimal execution context**
-Environments (one / staging+prod / >2):
-Prod requires explicit approval today? (yes/no/unsure):
+4) MINIMAL EXECUTION CONTEXT
+Environments: one / staging+prod / >2
+Prod requires explicit approval today? yes / no / unsure
 Most damaging failure mode (pick one):
 - Wrong decision shipped (false PASS)
 - Blocked shipping (false FAIL)
@@ -67,17 +61,11 @@ Most damaging failure mode (pick one):
 - Silent config/data drift
 - Other (1 sentence)
 
----
-
-### **5) Optional speed-ups**
+5) OPTIONAL SPEED-UPS
 Existing run artifacts (paths/filenames):
 Known “dangerous knobs” (modes/configs/defaults):
 
----
-
-## Known concerns (optional)
-
-**Experienced any of these? (multi-select)**
+KNOWN CONCERNS (optional) — multi-select:
 - Same run, different result
 - Can’t prove what ran weeks later
 - Silent config/mode drift
@@ -86,10 +74,8 @@ Known “dangerous knobs” (modes/configs/defaults):
 - None of the above
 
 Anything else that matters (max 3 sentences):
-[write here]
 
----
-
-## Clock start confirmation (required)
+Clock start confirmation (required)
 
 “I confirm this message includes the completed intake + repo access/zip + CI run links. I understand this is diagnostic only and no fixes are implemented in this engagement.”
+```
