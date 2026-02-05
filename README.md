@@ -1,73 +1,20 @@
 # Coherence Gate
 
-Artifact-led pipeline reliability diagnostics for teams whose CI, analytics, or evaluation systems drive real decisions.
-
-This repository contains a single, opinionated pre-flight diagnostic designed to answer one question:
+Artifact-led pipeline reliability diagnostics for decision pipelines (CI, analytics, evals).
 
 > **Can your pipeline prove what happened after a run — or are you relying on trust and dashboards?**
 
-## TL;DR
-- **$2,500 fixed • async-only • delivered in 48 hours** after inputs are complete
-- Deliverables: **Ranked Risk Register**, **Proof Pack v1 Spec**, **Go / No-Go**
-- If repo/logs can’t be shared → **Evidence Gap Pack**
-- I don’t need to understand your whole system — only **one declared critical path** + **CI evidence**.
+## What’s in this repo
+One fixed-scope engagement:
 
----
+- **$2,500 fixed • async-only • delivered in 48 business hours** after inputs are complete  
+- Outputs: **Ranked Risk Register**, **Proof Pack v1 Spec**, **Go / No-Go**  
+- Scope: **one declared critical path** + **CI evidence** (2–3 runs)
 
 ## Start here
+- Offer (60–90s read): **[`docs/ci-preflight.md`](docs/ci-preflight.md)**
+- Quick self-check (5 min): **[`docs/scorecard.md`](docs/scorecard.md)**
+- Intake (10 min): **[`docs/intake.md`](docs/intake.md)**
 
-- Read the offer: **[`docs/ci-preflight.md`](docs/ci-preflight.md)**
-- Start intake (10 min): **[`docs/intake.md`](docs/intake.md)**
-
-If the intake is a “yes,” send the completed intake + repo access/zip + CI log links **in one message**.  
-I confirm completeness; then the 48-hour clock starts.
-
----
-
-## What this is
-
-Coherence Gate is a forensic, asynchronous pre-flight for decision pipelines.
-
-It evaluates whether a system:
-- Produces reproducible, reviewable evidence per run
-- Blocks unsafe or ambiguous execution modes by default
-- Can defend its outputs weeks later under scrutiny
-
-This is **not** a platform, framework, or agent runtime.  
-It is a bounded diagnostic artifact.
-
----
-
-## What you get (deliverables)
-
-- **Ranked Risk Register** (top 5–10 issues with evidence, blast radius, smallest fix, acceptance test)
-- **Proof Pack v1 Spec** (the artifact contract your pipeline must emit per run)
-- **Go / No-Go** + shortest path to become “Sprint-Ready”
-
-(Full scope and exclusions are in the artifact.)
-
----
-
-## Who this is for
-
-- Teams running CI, experimentation, ML evals, analytics, pricing, or risk pipelines
-- Outputs influence decisions, not just dashboards
-- You’ve been blocked by drift, ambiguity, or review/compliance friction
-
-## Who this is not for
-
-- Greenfield projects
-- “Just make it faster” requests
-- Teams unwilling to evaluate evidence gaps honestly
-
----
-
-## Engagement model
-
-- Async-only
-- Fixed scope, fixed price
-- Artifact-first delivery
-- No calls, no retainers, no scope creep
-
-## Handling / confidentiality (lightweight)
-Read-only access or a zip snapshot is sufficient. You may redact sensitive values; this evaluates **proof gaps**, not business logic.
+If you proceed: send the completed intake + repo access/zip + CI run links **in one message**.  
+I confirm “Inputs complete,” then the 48-hour clock starts.
